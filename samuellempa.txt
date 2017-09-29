@@ -1,0 +1,175 @@
+
+* damons is now known as damons-away
+* damons-away is now known as damons
+* samuell (~samuell@81-231-165-137-no110.tbcn.telia.com) has joined
+<anniepoo> hey samuell!  
+<anniepoo> 8cD
+<samuell> Hi anniepoo !
+<anniepoo> how's life?
+<samuell> It's good, only been a little hectic lately :)
+<samuell> But improving now
+<anniepoo> oh good
+<anniepoo> 8cD I'm messing about a bit with a tangible interface
+<samuell> Aha
+<samuell> How does a TUI for prolog look like? :D
+<anniepoo> at the moment, like hold up fiducials in front of camera and have Prolog spit out data
+<anniepoo> I was thinking that often in the Prolog world we're building UI's for projects with a limited scope
+<anniepoo> because Prolog is used so much in research
+<anniepoo> and once you get over the basic hurdle of making data come in, it actually reduces the work of building a UI
+* freeman42y (~freeman42@2a02:8084:e82:4880:d9b0:a562:2678:f0c) has joined
+<samuell> Sounds like interesting ideas
+<anniepoo> 8cD
+<samuell> Prolog definitely needs to be connected more to all the "real world" stuff
+<anniepoo> suppose you're working on something graph like
+<anniepoo> a TUI is a great tool for working with a graph
+<samuell> Gotcha
+<anniepoo> the one really commercially successful TUI is the Reactable
+<anniepoo> which is used to set up flow programming in real time to make music
+* freeman42x has quit (Ping timeout: 240 seconds)
+<samuell> googling now ... looks interesting ... I'm quite a fan of flow-based programming too :)
+<anniepoo> me too
+<samuell> A bit inpired by Bret Victor's "Seeing Spaces" video perhaps?
+<samuell> The reactable
+<anniepoo> hmm
+<anniepoo> I don't know that video
+<samuell> It's a must watch, I think :) http://worrydream.com/SeeingSpaces/
+<yesbot> Title: Seeing Spaces (0.06s)
+<anniepoo> watching now!
+<anniepoo> you know, you asked a good question earlier
+<anniepoo> <samuell> How does a TUI for prolog look like? :D
+<samuell> :)
+<anniepoo> the "for prolog" is something I hadn't really asked in a serious way
+<anniepoo> can I use a TUI to aid in writing Prolog?
+<samuell> Good question ...
+<samuell> I mean, normal predicates goes closely towards the graph thinking
+<anniepoo> SWISH's graphic output is a very cool thing. We're using it a lot at work. Make queries in 'fiddle at repl' mode and get graphs as answers
+<samuell> ... but for more complex rules ... I don't know
+<samuell> Right
+<anniepoo> ok, how is a predicate a graph?
+<anniepoo> (predicates)
+<samuell> Yea, rules always produce concrete results (graphs), so that makes sense
+<samuell> But how to represent graph-producing rules? ... in a way more like templates for graphs, right?
+<anniepoo> I used to work in Second Life
+<anniepoo> SL is a great environment to explore data
+<anniepoo> in fact, I built a tool to do so under contract with Univ. of Mich
+<anniepoo> you fill in an excel spreadsheet and connect it with this tool in second life
+<samuell> Aha
+<anniepoo> it makes objects plot the data
+<samuell> New thing to me. I was much into 3D stuff some 10-15 years ago, but then got buried in more technical stuff :)
+<samuell> Should take a look
+<anniepoo> original application was to arrange images of cultures 
+<anniepoo> so you could have the images arrange by temp, length of growth, conc. of chemical
+<anniepoo> It's quite useful for displaying graphs
+<anniepoo> because 3D expands more rapidly than 2D
+<samuell> interesting
+<anniepoo> and in SL you can fly around inside the graph, exploring it
+<samuell> Re prolog queries ... they say SQL queries are actually also expanded to flow-based programs behind the scenes ...
+<samuell> ... which is graphs ... only grpahs of processes rather than of data.
+* TheCommieDuck (~TheCommie@176.25.219.221) has joined
+<anniepoo> hmm
+<anniepoo> oh, maybe a more real time debugger
+<samuell> ah, yea, perhaps
+<anniepoo> almost like watching someone work math on a whiteboard
+<anniepoo> or else you 'wipe' with a tool, and it does work
+<samuell> the idea i found interesting is about being able to get a both intuitive and precis understanding of a complex system
+<samuell> or a simple one for that matter
+<anniepoo> yes
+* stis_ has quit (Ping timeout: 255 seconds)
+<anniepoo> looking at seeingspaces poster - the part about NASA control room
+<anniepoo> the problem with something like a CAVE is that it's so expensive it's not something you can just use without thinking
+<anniepoo> Something we've never done, but I think about doing, is putting a bunch of computers around the shop, so we can, for example, display information rathern than have plans
+<anniepoo> right now we have paper plans
+<anniepoo> previous worker had a tablet - I made PDF of the plans, and he built from that
+<anniepoo> but the paper's interactive - we make notes on the plans as we build
+<anniepoo> and in an ideal world, there'd be a projector over the work table
+<anniepoo> and you could call up the drawing and use it as a template to cut the part out
+<anniepoo> in fact we do a bit of this - we laser cut templates from cardboard or MDF
+<anniepoo> to cut sheet metal from
+<samuell> ah
+<anniepoo> not to mention all the 3D printing/computer controlled machinery/LOM we do
+<samuell> heh, i think the paper/screen dichotomy is really an unsolved problem ...
+<samuell> i can't even hardly decide whether to take notes mostly on paper, or in my markdown textfile based solution on the computer
+<anniepoo> in the center of our shop is a large table
+<anniepoo> it's covered with the same melamine coating on cheap office worktables
+<anniepoo> you can write on it- which has been amazingly useful
+* georgios1 has quit (Quit: WeeChat 1.9)
+<anniepoo> making involves writing down dimensions
+<anniepoo> making small drawings
+<anniepoo> feeling free to write on the table is bizarrely useful
+<samuell> i can see that :)
+<anniepoo> we were mixing up this urethane casting compound
+<samuell> but then, if you want to have it into some more exact computerized format (svg or something) ...?
+<anniepoo> right - same downsides as usual
+* ianandrich has quit (Remote host closed the connection)
+<anniepoo> our worker's not very good with math
+<anniepoo> mixing the urethane has to be done quickly
+<anniepoo> and requires simple math calculations
+<anniepoo> I made him a form, he follows the form and writes in numbers
+<anniepoo> it's not very organic 
+<anniepoo> imagine if the scale were connected to computer system,
+<anniepoo> and we had a projector
+<anniepoo> draw circles where to put part A, part B, cup C, etc. down
+<anniepoo> then it follows along as he does the steps
+<samuell> projector based augmented reality ... i like it :)
+<anniepoo> I'm drawn back to your question
+<anniepoo> yes, I have a small projector
+<anniepoo> you know, I'm going to start not with the traditional TUI undertable arrangement
+<anniepoo> but with the projector over our white table
+<anniepoo> and I'm going to put some conduit up there so I can hang things
+<anniepoo> and have a dedicated computer that's always around
+<anniepoo> I have an old tablet computer
+<anniepoo> the 'tablet notebook' that predated 'tablets'
+<anniepoo> and I'll mount a kinect and a normal camera overhead
+<anniepoo> SeeingSpaces is an interesting idea
+<anniepoo> So what would a more organic interaction with Prolog look like?
+<samuell> i guess the problem, when going more generic (as opposed to TUIs for specific use cases), is that any physical representation of data has to be soo generic too ...
+<samuell> graphs, as you mentioned, being one good example of generic structure
+<anniepoo> though in a TUI making your own fiducials is easy
+<anniepoo> maybe we can make generalized TUI's for 'shapes' of data
+<anniepoo> then a grid can be a city planning tool or an exploration of constraints in some 2D system or whatever
+<samuell> yea, one could always have both the generic graph-based one for "generic" data (data for which there aren't specialized TUI solutions yet), and then develop specialized TUIs as we go
+<samuell> representing data as graphs is natural i think
+<anniepoo> for much data, yes
+<samuell> but, finding a good way to represent rules with graphs, might take more thinking
+<anniepoo> yes
+<anniepoo> it's more interesting to think about representing rules
+<anniepoo> rules act as agents in some ways
+<anniepoo> eg, you could represent a forward chaining expert system as a bunch of critters
+<anniepoo> and put some facts into the system
+<anniepoo> and they'd metabolize them and make new facts
+<samuell> yea, the data flow between rules is natural to think of as a graph, true
+<samuell> i wish swipl had fwd-chaining ... or perhaps it does?
+<anniepoo> CHR sorta is
+<anniepoo> 3 mins, brb
+<samuell> aha
+<anniepoo> back
+* samuell was reading https://dtai.cs.kuleuven.be/CHR/about.shtml gotta check this more later.
+<yesbot> Title: CHR - Constraint Handling Rules (1.09s)
+<anniepoo> the best thing out there is Tom Schrijver's powerpoint presso
+<anniepoo> it's online somewhere, if you don't find it email me, I'll send it
+<samuell> thanks!
+<anniepoo> seeingspaces is in service of understanding more of the science behind the physical manifestation
+<anniepoo> we were running a forge, using lots of propane gas
+<anniepoo> the pressure kept dropping as the gas expanded and cooled
+<anniepoo> I got a big tub, put the propane bottle in it and filled it with water
+<anniepoo> of course the thermal mass of the water stabilized the temp of the propane
+* whoman eyes open wider
+<anniepoo> 8cD hey whoman - always something going on on ##prolog!
+<anniepoo> how could constraints be represented?
+<anniepoo> many of the most powerful concepts of Prolog involve constraint systems
+<whoman> yep !! hope everyone is having a good weekend ! we are indeed beginning to see the construction of reality as well , very exciting times
+<anniepoo> yes, we're constructing reality
+<anniepoo> I was constructing some boards to mount pictures on earlier
+<anniepoo> and will be constructing motorcycle jackstands in a bit
+<anniepoo> how could we explore an RDF graph?
+<samuell> It is interesting that constraints is what is needed to give anything any form at all ...
+<anniepoo> not just display, but interact.
+<anniepoo> yes, that's true!
+<whoman> im working on understanding the great book =) 
+<anniepoo> clocksin and mellish?
+<anniepoo> or ROK?
+* samuell needs to leave soon. getting late in sweden
+<anniepoo> wonderful conversation, samuell!
+<samuell> anniepoo, the same! thanks for the many pointers and ideas
+<whoman> thebook*
+<anniepoo> LOL - yes, you've moved my thinking about this a lot!
