@@ -40,6 +40,7 @@ public final class GraphDisplayFrame extends JFrame {
 	//	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		JButton btn = new JButton("howdy");
+		DynamicBook thepanel = new DynamicBook();
 		
 		btn.setPreferredSize(new Dimension(200,100));
 		
