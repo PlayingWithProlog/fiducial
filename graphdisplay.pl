@@ -18,7 +18,7 @@ add_stuff_demo(Ref) :-
     new(F, ellipse(80,40)),
     send(Ref, display, F),
     send(F, shadow, 13),
-    send(F, selected, true),
+ %   send(F, selected, true),
     send(F, pen, 5),
     send(F, colour, blue),
     send(F, fill_pattern, colour(green)),
@@ -33,7 +33,7 @@ add_stuff_demo(Ref) :-
     send(C, display, DE2),
     send(C, center, point(300,300)),
     send(DE2, colour, yellow),
-    Name = taco,
+    gensym(taco, Name),
     new(@Name, ellipse(160,200)),    % we can indirect names
     send(Ref, display, @Name).
 

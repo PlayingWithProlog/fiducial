@@ -1,0 +1,20 @@
+- Graphs
+- Dynamic Book
+- Living Recipe
+- Train tracks  (slot car track?)
+- Pipe connection
+- start webservice an plug together
+- factory/constraints - move stuff around in factory, id constraints not satisfied
+- projector and camera on the top makes things mechanically easier
+- education - demo population dynamics with an interactive graph, using labview type cardboard instruments
+- cardboard instruments - like labview
+- geometric constraints - hold projection on a constraint
+- connection constraint - 
+
+The TUI should be presented with 3 videos
+1. Justify
+2. Demo
+3. Tutorial
+
+
+

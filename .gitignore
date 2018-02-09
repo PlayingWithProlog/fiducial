@@ -3,4 +3,9 @@
 /*/*/*.*~
 java/.recommenders/
 java/.metadata/
-
+OpenCV/
+*.class
+*/*/*.class
+*/*/*/*.class
+*/*/*/*/*.class
+install-opencv.sh

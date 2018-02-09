@@ -1,8 +1,9 @@
 /**
  * 
  */
-package com.theelginworks.graphdisplay;
+package com.theelginworks.spriter;
 
+import java.awt.Dimension;
 import java.awt.LayoutManager;
 
 import javax.swing.JPanel;
@@ -17,7 +18,7 @@ public class DynamicBook extends JPanel {
 	 * 
 	 */
 	public DynamicBook() {
-		// TODO Auto-generated constructor stub
+		initDynamicBook();
 	}
 
 	/**
@@ -25,7 +26,7 @@ public class DynamicBook extends JPanel {
 	 */
 	public DynamicBook(LayoutManager arg0) {
 		super(arg0);
-		// TODO Auto-generated constructor stub
+		initDynamicBook();
 	}
 
 	/**
@@ -33,7 +34,7 @@ public class DynamicBook extends JPanel {
 	 */
 	public DynamicBook(boolean arg0) {
 		super(arg0);
-		// TODO Auto-generated constructor stub
+		initDynamicBook();
 	}
 
 	/**
@@ -42,7 +43,13 @@ public class DynamicBook extends JPanel {
 	 */
 	public DynamicBook(LayoutManager arg0, boolean arg1) {
 		super(arg0, arg1);
-		// TODO Auto-generated constructor stub
+		initDynamicBook();
+	}
+	
+	private void initDynamicBook() {
+		this.setPreferredSize(new Dimension(100, 100));
+		this.doLayout();
+		
 	}
 
 }

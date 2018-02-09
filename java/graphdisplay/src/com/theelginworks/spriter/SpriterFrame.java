@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.theelginworks.graphdisplay;
+package com.theelginworks.spriter;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -16,18 +16,23 @@ import javax.swing.JFrame;
  * @author anniepoo
  *
  */
-public final class GraphDisplayFrame extends JFrame {
+public final class SpriterFrame extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8728164615692353965L;
 
 	/**
 	 * @throws HeadlessException
 	 */
-	public GraphDisplayFrame() throws HeadlessException {
+	public SpriterFrame() throws HeadlessException {
 		super("GraphDisplay");
 		
 		this.addWindowListener(new WindowAdapter() {	
 			public void windowClosing(WindowEvent e) {
-				GraphDisplayFrame.this.setVisible(false);
-			    GraphDisplayFrame.this.dispose(); 
+				SpriterFrame.this.setVisible(false);
+			    SpriterFrame.this.dispose(); 
 			}
 			
 			@Override
@@ -45,6 +50,7 @@ public final class GraphDisplayFrame extends JFrame {
 		btn.setPreferredSize(new Dimension(200,100));
 		
 		getContentPane().add(btn , BorderLayout.CENTER);
+		getContentPane().add(thepanel, BorderLayout.SOUTH);
 		pack();
 		setExtendedState(JFrame.MAXIMIZED_HORIZ);
 	//	theFrame.setUndecorated(true);
