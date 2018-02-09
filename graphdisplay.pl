@@ -35,5 +35,23 @@ add_stuff_demo(Ref) :-
     send(DE2, colour, yellow),
     gensym(taco, Name),
     new(@Name, ellipse(160,200)),    % we can indirect names
-    send(Ref, display, @Name).
+    send(Ref, display, @Name),
+    new(Path, path(smooth, 5)),
+    send(Path, center, point(200,300)),
+    send(Path, closed, true),
+    send(Path, append, point(100,100)),
+    send(Path, append, point(280,120)),
+    send(Path, append, point(240,200)),
+    send(Path, append, point(130,260)),
+    send(Path, append, point(100,100)),
+    send(Path, append, point(118,102)),
+    send(Path, pen, 5),
+    send(Path, colour, colour(green)),
+    send(Path, fill_pattern, colour(red)),
+    send(Ref, display, Path).
+
+
+
+
+
 
